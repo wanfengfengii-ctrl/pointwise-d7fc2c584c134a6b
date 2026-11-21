@@ -22,4 +22,4 @@
 
 `samples/mix-scans.json` 是可从站库正常登记、冻结并实收的甲乙原始输入。`python3 -B mix_inputs.py` 试收这两份件，停用站库后分别显示 V1 单件基准 0 和 2。用这两件申报 `tick=0, lo=0, hi=0`，混配签报应含且仅含 `(1/2,1]`。交换两件应签 `[0,1/2)`。两份不同批次若各只有一条旧机恒为 0、替代机均匀扫过 [−1,1] 的线段，同一申报应签 `[0,1]`。
 
-现有 `.pointwise-runtime.json` 使用 `version` 1、`kind` 为 `cli`，`setup` 是命令参数数组的列表，`verify` 和 `demo` 各为一条命令的参数数组。原回归为 `python3 -B check_project.py`，原单件交接演示为 `python3 -B demo.py`。交付时，`verify` 实际核对原回归与混配业务，`demo` 展示站库停用后的混配签发，以及重开中心后凭原号领取比例与双件出处。核验失败须返回非零退出码。
+`.pointwise-runtime.json` 使用 `version` 1、`kind` 为 `cli`，`setup` 是命令参数数组的列表，`verify` 和 `demo` 各为一条命令的参数数组。`verify` 入口 `python3 -B verify.py` 先实算混配样例（含交换甲乙与领取出处），再运行 `tests` 包内完整原回归；原单件回归仍可单独用 `python3 -B check_project.py` 运行，原单件交接演示保留在 `python3 -B demo.py`。混配演示入口为 `python3 -B demo_mix.py`，展示站库停用后的混配签发，以及重开中心后凭原号领取比例与双件出处。核验失败须返回非零退出码。
