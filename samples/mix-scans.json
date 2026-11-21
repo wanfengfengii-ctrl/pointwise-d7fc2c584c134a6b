@@ -1,0 +1,18 @@
+[
+  {
+    "batch_id": "MIX-A",
+    "revision_id": "Z",
+    "rows": [
+      {"x0":"0", "x1":"0", "y0":"0", "y1":"0", "weight":"4", "source":{"record":"mix-a-01", "scan_start":"0", "scan_end":"0"}},
+      {"x0":"2", "x1":"2", "y0":"1", "y1":"1", "weight":"4", "source":{"record":"mix-a-02", "scan_start":"2", "scan_end":"2"}}
+    ]
+  },
+  {
+    "batch_id": "MIX-B",
+    "revision_id": "Z",
+    "rows": [
+      {"x0":"0", "x1":"0", "y0":"2", "y1":"2", "weight":"1", "source":{"record":"mix-b-01", "scan_start":"0", "scan_end":"0"}},
+      {"x0":"0", "x1":"1", "y0":"3", "y1":"3", "weight":"1", "source":{"record":"mix-b-02", "scan_start":"1", "scan_end":"2"}}
+    ]
+  }
+]

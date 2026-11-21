@@ -1,0 +1,10 @@
+{
+  "batch_id": "QH-27",
+  "revision_id": "Z",
+  "rows": [
+    {"x0":"0", "x1":"0", "y0":"0", "y1":"0", "weight":"1/4", "source":{"record":"bench-Z-01", "scan_start":"10", "scan_end":"14"}},
+    {"x0":"0", "x1":"0", "y0":"2", "y1":"2", "weight":"1/4", "source":{"record":"bench-Z-02", "scan_start":"15", "scan_end":"18"}},
+    {"x0":"0", "x1":"1", "y0":"3", "y1":"3", "weight":"1/4", "source":{"record":"bench-Z-03", "scan_start":"20", "scan_end":"26"}},
+    {"x0":"1", "x1":"2", "y0":"-1", "y1":"-1", "weight":"1/4", "source":{"record":"bench-Z-04", "scan_start":"31", "scan_end":"37"}}
+  ]
+}
